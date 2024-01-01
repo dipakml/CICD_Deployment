@@ -69,7 +69,7 @@ Idea is to implement the end to end machine learning project while using free de
 ### Demo
 Azure deployment Web application Snapshot:
 
-<img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/cicd_app.png" width=600>
+<img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/cicd_app.PNG" width=600>
 
 
 ### Stpes in project execution
