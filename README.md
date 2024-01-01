@@ -1,14 +1,16 @@
 ## CI/CD Pipeline- Prediction of Concrete Compressive Strength Using Machine Learning 
 
+## This project demonstrates the application of the MlOps principles & implement CI/CD pipeline with github actions, dockerizing the app & deploy it on Azure cloud for seamless integration & deployment
+
 <img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/concrete.png" width=800>
 
 ### Table of Content
   * [Overview](#overview)
-  * [Dataset Information](#dataset-Information)
-  * [Attribute Information](#attribute-Information)
+  * [Dataset Information](#dataset-information)
+  * [Attribute Information](#attribute-information)
   * [Motivation](#motivation)
   * [Demo](#demo)
-  * [Stpes in project execution](#steps)
+  * [Steps in project execution](#steps-in-project-execution)
   * [Technical Aspect](#technical-aspect)
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
@@ -62,17 +64,17 @@ Concrete compressive strength -- quantitative -- MPa -- Output Variable
 
 ### Motivation
 The motivation was to use machine learning experiments to develop a web based application to predict the compressive strength of concrete based on its composition. This effort will save physical testing & give the results on a single click.
-Idea is to implement the end to end machine learning project while using free deployment platform like Heroku.
+This project demonstrates the application of the MlOps principles & implement CI/CD pipeline with github actions, dockerizing the app & deploy it on Azure cloud for seamless integration & deployment.
 
 
 
 ### Demo
 Azure deployment Web application Snapshot:
 
-<img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/cicd_app.PNG" width=600>
+<img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/cicd_app.png" width=600>
 
 
-### Stpes in project execution
+### Steps in project execution
 
 - Data gathering 
 - Descriptive Analysis 
@@ -80,7 +82,19 @@ Azure deployment Web application Snapshot:
 - Data Preprocessing 
 - Data Modelling 
 - Model Evaluation 
-- Model Deployment 
+- Creating a flask web app
+- Create a github repositiory & push the relevent files
+- Install Docker desktop on local machine
+- Log in to Azure Portal & create container registry
+- Get the username(registry name) & password(from access keys), here username is cicd121
+- Build the Docker image of the Source Code by using following in command prompt:
+  docker login cicd121.azurecr.io
+  docker build -t cicd121.azurecr.io/cicd121:latest
+- Push the Docker image to Container Registry:
+  docker push cicd121.azurecr.io/cicd121:latest
+- Launch the Web App Server in Azure
+- Pull the Docker image from the container registry to Web App server and run
+    
 
 ### Technical Aspect 
 
@@ -101,24 +115,6 @@ Azure deployment Web application Snapshot:
 - Begin a new virtual environment with Python and activate it.
 - Install the required packages using pip install -r requirements.txt
 - Execute the command: python app.py
-
-AZURE-CICD-Deployment-with-Github-Actions
-
-Login server: cicd121.azurecr.io
-password- EVMpo4js/kS49Cl11K3YmnVyCPizLb8v016P+ZfvpQ+ACRDrT3sU
-
-Run from terminal:
-docker build -t cicd121.azurecr.io/cicd121:latest .
-
-docker login cicd121.azurecr.io
-
-docker push cicd121.azurecr.io/cicd121:latest
-
-Deployment Steps:
-1. Build the Docker image of the Source Code
-2. Push the Docker image to Container Registry
-3. Launch the Web App Server in Azure
-4. Pull the Docker image from the container registry to Web App server and run
 
 
 ### Note:
