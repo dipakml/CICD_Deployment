@@ -1,6 +1,6 @@
 ## CI/CD Pipeline- Prediction of Concrete Compressive Strength Using Machine Learning 
 
-## This project demonstrates the application of the MlOps principles & implement CI/CD pipeline with github actions, dockerizing the app & deploy it on Azure cloud for seamless integration & deployment
+### This project demonstrates the application of the MlOps principles & implement CI/CD pipeline with github actions, dockerizing the app & deploy it on Azure cloud for seamless integration & deployment
 
 <img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/concrete.png" width=800>
 
