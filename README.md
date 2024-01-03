@@ -2,6 +2,7 @@
 
 ### This project demonstrates the application of the MlOps principles & implement CI/CD pipeline with github actions, dockerizing the app & deploy it on Azure cloud for seamless integration & deployment
 
+![](https://bodywork.readthedocs.io/en/latest/images/cicd_with_bodywork.png)
 <img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/concrete.png" width=800>
 
 ### Table of Content
@@ -14,7 +15,6 @@
   * [Technical Aspect](#technical-aspect)
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
-  * [Note](#note)
 
 
 
@@ -28,15 +28,6 @@ In this project, let's apply machine learning techniques and develop a web based
 ###  Dataset Information
 The actual concrete compressive strength (MPa) for a given mixture under a specific age (days) was determined from laboratory.
 The data has 8 quantitative input variables, and 1 quantitative output variable, and 1030 instances (observations).
-
-Original Owner and Donor
-Prof. I-Cheng Yeh
-Department of Information Management
-Chung-Hua University,
-Hsin Chu, Taiwan 30067, R.O.C.
-e-mail:icyeh@chu.edu.tw
-TEL:886-3-5186511
-
 
 
 ### Attribute Information
@@ -71,7 +62,8 @@ This project demonstrates the application of the MlOps principles & implement CI
 ### Demo
 Azure deployment Web application Snapshot:
 
-<img target="_blank" src="https://github.com/dipakml/Prediction-of-Concrete-Compressive-Strength/blob/master/Logo_Images/cicd_app.png" width=600>
+![](https://i.postimg.cc/LXLQNRmz/cicd-app.png)
+
 
 
 ### Steps in project execution
@@ -116,9 +108,6 @@ Azure deployment Web application Snapshot:
 - Install the required packages using pip install -r requirements.txt
 - Execute the command: python app.py
 
-
-### Note:
-- Webapp can handle concurrency upto some extent but can be scaled.
 
 
 
